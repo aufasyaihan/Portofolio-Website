@@ -6,6 +6,11 @@ export default {
       fontFamily: {
         poppins: ["Poppins", "sans serif"],
       },
+      colors: {
+        darkBlue: "#000814",
+        gold: "	#eead0e",
+        brightGold: "#FFD60A",
+      },
     },
   },
   plugins: [],
