@@ -76,7 +76,7 @@ export default function Navbar() {
             </a>
           </li>
           <li>
-            <a href="#contact" className={`${itemNavStyle} + ${goldHover}`}>
+            <a href="#contact" className={`${itemNavStyle} + ${goldHover} + border border-brightGold text-brightGold`}>
               Contact Me
             </a>
           </li>

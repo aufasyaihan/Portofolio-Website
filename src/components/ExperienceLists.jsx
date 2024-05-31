@@ -19,7 +19,13 @@ export default function ExperienceLists({
         </div>
         <div className="flex flex-col border-l-2 -ml-[18px] pl-4 ">
           <h3>{position}</h3>
-          <p className="text-justify">{description}</p>
+          <ol className="list-disc ml-5">
+            {description.map((desc) => (
+              <li key={desc} className="text-justify">
+                {desc}
+              </li>
+            ))}
+          </ol>
         </div>
       </li>
     </>
