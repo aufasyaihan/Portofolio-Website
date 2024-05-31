@@ -8,7 +8,7 @@ export default function Projects() {
       <div className="grid grid-cols-1 md:grid-cols-2 grid-flow-row gap-5 mt-5">
         {
             PROJECTS.map((project)=> (
-                <ProjectCard key={project.id} img={project.img} title={project.title} link={project.link} />
+                <ProjectCard key={project.id} img={project.img} title={project.title} link={project.link} desc={project.desc}/>
             ))
         }
       </div>

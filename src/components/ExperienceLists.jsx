@@ -15,7 +15,7 @@ export default function ExperienceLists({
             <Circle />
             <h2 className="font-bold">{title}</h2>
           </div>
-          <span>{year}</span>
+          <span className="text-end">{year}</span>
         </div>
         <div className="flex flex-col border-l-2 -ml-[18px] pl-4 ">
           <h3>{position}</h3>

@@ -21,7 +21,7 @@ export function Circle() {
           className="color000000 svgShape"
         ></path>
       </svg>
-      <div className="absolute size-5 bg-brightGold rounded-full inset-0 blur-md"></div>
+      <div className="absolute size-5 bg-brightGold rounded-full inset-0 blur-md animate-pulse"></div>
     </div>
   );
 }

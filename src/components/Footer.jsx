@@ -30,7 +30,7 @@ export default function Footer() {
             width={33}
           />
         </div>
-        <div>
+        <div className="text-center sm:text-end">
           <p>© 2024 Aufa Syaihan Azzahidi. All rights reserved.</p>
         </div>
       </div>

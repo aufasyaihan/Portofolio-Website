@@ -11,24 +11,28 @@ const PROJECTS = [
     title: "E-Voting",
     img: E_Voting,
     link: "https://github.com/lastpeace/E-VOTING",
+    desc: ["Laravel 10", "Tailwind"],
   },
   {
     id: +new Date() + increment++,
     title: "Fishing Location",
     img: fishLoc,
     link: "https://github.com/aufasyaihan/projectsig",
+    desc: ["Laravel 10", "Tailwind", "Leaflet.js"],
   },
   {
     id: +new Date() + increment++,
     title: "Project Manager",
     img: projectManager,
     link: "https://github.com/aufasyaihan/Project-Manager",
+    desc: ["Vite", "React.js"],
   },
   {
     id: +new Date() + increment++,
     title: "Quiz App",
     img: quizApp,
     link: "https://github.com/aufasyaihan/quizz-app",
+    desc: ["Vite", "React.js"],
   },
 ];
 
