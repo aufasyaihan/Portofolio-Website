@@ -12,7 +12,7 @@ export const WORK_EXPERIENCES = [
   {
     id: +new Date() + increment++,
     title: "Practicum Assistant",
-    position: "Coordinator of Object-Oriented Programming Practicum",
+    position: "Staff of Data Structure Practicum",
     year: "Aug 2023 - Dec 2023",
     description:
       "Organized and managed weekly practicum sessions, ensuring smooth coordination and timely delivery of course materials. Led and coordinated a team of instructors and teaching assistants, fostering effective communication and collaboration throughout the practicum.",

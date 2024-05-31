@@ -1,4 +1,4 @@
-import DocIcon from "../Icons/Icons";
+import { DocIcon } from "../Icons/Icons";
 import img from "../assets/images/aufa_removedbg_cropped.png";
 
 export default function Hero() {

@@ -64,7 +64,7 @@ export default function Navbar() {
           </li>
           <li>
             <a
-              href="#my-projects"
+              href="#projects"
               className={`${itemNavStyle} + ${whiteHover}`}
             >
               My Projects
