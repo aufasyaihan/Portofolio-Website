@@ -5,7 +5,7 @@ import group from "../assets/icons/group.svg";
 
 export default function About() {
   return (
-    <div className="flex flex-col pt-10 px-10 mx-16">
+    <div className="flex flex-col pt-10 px-10 md:mx-16">
       <h1 className="font-bold text-4xl text-darkBlue">About Me</h1>
       <div className="flex flex-wrap sm:flex-wrap md:flex-nowrap gap-5 mt-5">
         <Card img={code} alt="code">

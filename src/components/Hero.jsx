@@ -3,8 +3,8 @@ import img from "../assets/images/aufa_removedbg_cropped.png";
 
 export default function Hero() {
   return (
-    <div className="relative bg-darkBlue h-[550px] rounded-b-[50px] flex justify-between px-20 pt-10 overflow-hidden shadow-xl ">
-      <div className="text-white my-auto mx-20">
+    <div className="relative bg-darkBlue gap-2 h-[500px] md:h-[550px] rounded-b-[50px] flex justify-between md:px-20 pt-0 md:pt-10 overflow-hidden shadow-xl md:flex-nowrap">
+      <div className="text-white mt-32 md:mt-auto w-full my-auto ml-20 md:mx-20">
         <h1 className="text-5xl font-bold">
           <span className="text-gold">Hi!</span> I&apos;m
         </h1>
@@ -25,15 +25,15 @@ export default function Hero() {
           My Resume
         </a>
       </div>
-      <div className="z-20">
-        <img src={img} alt="" className="object-cover h-full mt-28 scale-125" />
+      <div className="z-20 w-[700px] md:w-full">
+        <img
+          src={img}
+          alt=""
+          className="object-cover h-full mt-28  md:scale-125"
+        />
       </div>
-      <div
-        className={`absolute top-56 right-32 p-32 blur-3xl rounded-full bg-sky-700 object-cover`}
-      ></div>
-      <div
-        className={`absolute bottom-56 right-96 p-20 blur-3xl rounded-full bg-gold object-cover`}
-      ></div>
+      <div className="absolute p-20 right-0 blur-3xl rounded-full bg-sky-700 object-cover md:top-56 md:right-32 md:p-32"></div>
+      <div className="absolute p-12 bottom-0 blur-3xl rounded-full bg-gold object-cover md:bottom-56 md:right-96 md:p-20"></div>
     </div>
   );
 }
