@@ -37,10 +37,10 @@ export default function Experience() {
         </ol>
       </div>
       <div
-        className={`absolute top-28 right-0 p-12 blur-3xl rounded-full bg-gold object-cover`}
+        className="absolute top-28 right-0 p-12 blur-3xl rounded-full bg-gold object-cover animate-pulse"
       ></div>
       <div
-        className={`absolute bottom-28 left-0 p-10 blur-3xl rounded-full bg-sky-700 object-cover`}
+        className="absolute bottom-28 left-0 p-10 blur-3xl rounded-full bg-sky-700 object-cover animate-pulse"
       ></div>
     </div>
   );

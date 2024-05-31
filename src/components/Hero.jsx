@@ -32,8 +32,8 @@ export default function Hero() {
           className="object-cover h-full mt-28  md:scale-125"
         />
       </div>
-      <div className="absolute p-20 right-0 blur-3xl rounded-full bg-sky-700 object-cover md:top-56 md:right-32 md:p-32"></div>
-      <div className="absolute p-12 bottom-0 blur-3xl rounded-full bg-gold object-cover md:bottom-56 md:right-96 md:p-20"></div>
+      <div className="absolute p-20 right-0 blur-3xl rounded-full bg-sky-700 object-cover md:top-56 md:right-32 md:p-32 animate-pulse"></div>
+      <div className="absolute p-12 bottom-0 blur-3xl rounded-full bg-gold object-cover md:bottom-56 md:right-96 md:p-20 animate-pulse"></div>
     </div>
   );
 }
