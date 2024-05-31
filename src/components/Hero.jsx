@@ -1,3 +1,4 @@
+import DocIcon from "../Icons/Icons";
 import img from "../assets/images/aufa_removedbg_cropped.png";
 
 export default function Hero() {
@@ -13,9 +14,15 @@ export default function Hero() {
         <p className="text-xl mt-3">
           A <span className="text-gold">Web</span> Developer
         </p>
-        <button className="px-4 py-2 bg-gold text-darkBlue mt-3 rounded-full hover:shadow-custom-brightGold transition ease-in-out">
+        <a
+          href="https://docs.google.com/document/d/11kRRi4AK2tDM3U34HB5NcnJLLKfMPY21/edit?usp=sharing&ouid=117240447335121599381&rtpof=true&sd=true" target="_blank"
+          className="flex gap-1 items-center px-4 py-2 w-fit bg-gold text-darkBlue mt-3 rounded-full hover:shadow-custom-brightGold transition ease-in-out"
+        >
+          <span>
+            <DocIcon />
+          </span>
           My Resume
-        </button>
+        </a>
       </div>
       {/* <div className="absolute h-60 w-60 bg-white right-[240px] bottom-[220px] rounded-full opacity-35 animate-ping -z-0">
 
@@ -24,18 +31,14 @@ export default function Hero() {
         <img src={img} alt="profile picture" className="object-cover h-80 w-80 rounded-full"/>
       </div> */}
       <div className="z-20">
-        <img
-          src={img}
-          alt=""
-          className="object-cover h-full mt-28 scale-125"
-        />
+        <img src={img} alt="" className="object-cover h-full mt-28 scale-125" />
       </div>
       <div
-      className={`absolute top-56 right-32 p-32 blur-3xl rounded-full bg-sky-700 object-cover`}
-    ></div>
+        className={`absolute top-56 right-32 p-32 blur-3xl rounded-full bg-sky-700 object-cover`}
+      ></div>
       <div
-      className={`absolute bottom-56 right-96 p-20 blur-3xl rounded-full bg-gold object-cover`}
-    ></div>
+        className={`absolute bottom-56 right-96 p-20 blur-3xl rounded-full bg-gold object-cover`}
+      ></div>
     </div>
   );
 }

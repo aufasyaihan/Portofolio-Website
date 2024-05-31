@@ -9,9 +9,9 @@ export default function ExperienceLists({
 }) {
   return (
     <>
-      <li className="mt-4">
+      <li className="mt-2">
         <div className="flex justify-between">
-          <div className="flex items-center gap-2 -ml-[27px]">
+          <div className="flex items-center gap-2 -ml-[26.5px]">
             <Circle />
             <h2 className="font-bold">{title}</h2>
           </div>
@@ -19,13 +19,7 @@ export default function ExperienceLists({
         </div>
         <div className="flex flex-col border-l-2 -ml-[18px] pl-4 ">
           <h3>{position}</h3>
-          <ol className="list-disc ml-5">
-            {description.map((desc) => (
-              <li key={desc} className="text-justify">
-                {desc}
-              </li>
-            ))}
-          </ol>
+          <p className="text-justify text-md mt-2 text-gray-400">{description}</p>
         </div>
       </li>
     </>
