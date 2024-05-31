@@ -52,10 +52,10 @@ export default function Navbar() {
   return (
     <nav className={navStyle}>
       <div className="mx-8 my-2 flex justify-between items-center">
-        <h1 className="text-3xl text-white font-bold p-4">
+        <a href="#" className="text-3xl text-white font-bold p-4">
           <span className="text-gold">My</span>
           <span className="underline underline-offset-4">Portofolio</span>
-        </h1>
+        </a>
         <ul className="flex text-white gap-2 p-4">
           <li>
             <a href="#about" className={`${itemNavStyle} + ${whiteHover}`}>
