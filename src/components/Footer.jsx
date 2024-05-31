@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className="bg-darkBlue text-white p-10 border-t border-gray-500 h-40">
       <div className="flex justify-between gap-4 flex-col md:flex-row items-center my-auto md:my-5">
-        <div className="flex gap-4">
+        <div className="flex gap-4 items-center">
           <SocialMedia
             link="https://facebook.com/aufa.azzahidi"
             image={facebook}

@@ -1,4 +1,8 @@
 import { useEffect, useState } from "react";
+import hamburgerMenu from "../assets/icons/HamburgerMenu.svg";
+import NavMenu from "./NavMenu";
+import HamburgerMenu from "./HamburgerMenu";
+import x from "../assets/icons/X.svg";
 
 export default function Navbar() {
   const itemNavStyle = "py-2 px-4 rounded-full transition-all ease-in-out";
@@ -10,6 +14,7 @@ export default function Navbar() {
     isScrolled: false,
     isOverHero: false,
   });
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     function handleScroll() {
@@ -41,6 +46,15 @@ export default function Navbar() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  function handleClick() {
+    setIsOpen((prevState) => !prevState);
+  }
+
+  function handleClose(){
+    setIsOpen(false);
+  }
+
   let navStyle =
     "fixed top-0 w-screen font-poppins z-50 transition ease-in-out h-[85px]";
   if (isScrolled.isScrolled) {
@@ -56,36 +70,25 @@ export default function Navbar() {
           <span className="text-gold">My</span>
           <span className="underline underline-offset-4">Portofolio</span>
         </a>
-        <ul className="flex text-white gap-2 p-4">
-          <li>
-            <a href="#about" className={`${itemNavStyle} + ${whiteHover}`}>
-              About
-            </a>
-          </li>
-          <li>
-            <a
-              href="#projects"
-              className={`${itemNavStyle} + ${whiteHover}`}
-            >
-              My Projects
-            </a>
-          </li>
-          <li>
-            <a href="#experience" className={`${itemNavStyle} + ${whiteHover}`}>
-              Experience
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="#contact"
-              className={`${itemNavStyle} + ${goldHover} + border border-brightGold text-brightGold`}
-            >
-              Contact Me
-            </a>
-          </li>
+        <button className="md:hidden z-50" onClick={handleClick}>
+          <img src={isOpen ? x : hamburgerMenu} alt="" width={50} className="text-white transision-all" />
+        </button>
+        <ul className="text-white gap-2 p-4 hidden md:flex">
+          <NavMenu
+            itemNavStyle={itemNavStyle}
+            whiteHover={whiteHover}
+            goldHover={goldHover}
+          />
         </ul>
       </div>
+      <HamburgerMenu isOpen={isOpen}>
+        <NavMenu
+          itemNavStyle={itemNavStyle}
+          whiteHover={whiteHover}
+          goldHover={goldHover}
+          onClick={handleClose}
+        />
+      </HamburgerMenu>
     </nav>
   );
 }
