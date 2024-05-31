@@ -6,7 +6,7 @@ export default function Experience() {
     <div className="relative bg-darkBlue px-10 md:px-24 py-10 rounded-t-[50px] shadow-lg text-white flex flex-col gap-5">
       <h1 className="font-bold text-4xl text-gold underline underline-offset-8 decoration-gold">Experiences</h1>
       <h2 className="text-2xl">Work Experiences</h2>
-      <div className="px-8 -mt-4">
+      <div className="pl-8 -mt-4">
         <ol className="md:text-xl">
           {WORK_EXPERIENCES.map((exp) => (
             <ExperienceLists
@@ -20,7 +20,7 @@ export default function Experience() {
         </ol>
       </div>
       <h2 className="text-2xl">Organization Experiences</h2>
-      <div className="px-8 -mt-4">
+      <div className="pl-8 -mt-4">
         <ol className="md:text-xl">
           {ORGANIZATIONS_EXPERIENCES.map((exp) => {
            return (
