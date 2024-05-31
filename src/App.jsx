@@ -1,10 +1,10 @@
-import About from "./components/About"
-import Hero from "./components/Hero"
-import Navbar from "./components/Navbar"
-import Section from "./components/Section"
+import About from "./components/About";
+import Experience from "./components/Experience";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import Section from "./components/Section";
 
 function App() {
-
   return (
     <>
       <Navbar />
@@ -14,10 +14,10 @@ function App() {
         <About />
       </Section>
       <Section id="experience">
-        <About />
+        <Experience />
       </Section>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

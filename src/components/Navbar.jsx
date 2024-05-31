@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 
 export default function Navbar() {
-  const hover =
-    "hover:bg-white hover:text-darkBlue py-2 px-4 rounded-full transition-all ease-in-out";
+  const itemNavStyle = "py-2 px-4 rounded-full transition-all ease-in-out";
+  const whiteHover = " hover:bg-white hover:text-darkBlue";
+  const goldHover =
+    " hover:bg-gold hover:text-darkBlue hover:shadow-custom-brightGold";
 
   const [isScrolled, setIsScrolled] = useState({
     isScrolled: false,
@@ -56,22 +58,25 @@ export default function Navbar() {
         </h1>
         <ul className="flex text-white gap-2 p-4">
           <li>
-            <a href="#about" className={hover}>
+            <a href="#about" className={`${itemNavStyle} + ${whiteHover}`}>
               About
             </a>
           </li>
           <li>
-            <a href="#experience" className={hover}>
+            <a href="#experience" className={`${itemNavStyle} + ${whiteHover}`}>
               Experience
             </a>
           </li>
           <li>
-            <a href="#my-projects" className={hover}>
+            <a
+              href="#my-projects"
+              className={`${itemNavStyle} + ${whiteHover}`}
+            >
               My Projects
             </a>
           </li>
           <li>
-            <a href="#contact" className={hover}>
+            <a href="#contact" className={`${itemNavStyle} + ${goldHover}`}>
               Contact Me
             </a>
           </li>
