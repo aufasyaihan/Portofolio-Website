@@ -7,26 +7,28 @@ export default function Experience() {
       <h1 className="font-bold text-4xl text-gold">Experiences</h1>
       <h2 className="text-2xl">Work Experiences</h2>
       <div className="mx-auto px-8 -mt-4">
-        <ol className="list-disc text-xl">
+        <ol className="text-xl">
           {WORK_EXPERIENCES.map((exp) => (
             <ExperienceLists
               key={exp.id}
               title={exp.title}
               year={exp.year}
               description={exp.description}
+              position={exp.position}
             />
           ))}
         </ol>
       </div>
       <h2 className="text-2xl">Organization Experiences</h2>
       <div className="mx-auto px-8 -mt-4">
-        <ol className="list-disc text-xl">
+        <ol className="text-xl">
           {ORGANIZATIONS_EXPERIENCES.map((exp) => (
             <ExperienceLists
               key={exp.id}
               title={exp.title}
               year={exp.year}
               description={exp.description}
+              position={exp.position}
             />
           ))}
         </ol>

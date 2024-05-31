@@ -1,14 +1,27 @@
+import { Circle } from "../Icons/Icons";
+
 /* eslint-disable react/prop-types */
-export default function ExperienceLists({ title, year, description }) {
+export default function ExperienceLists({
+  title,
+  year,
+  description,
+  position,
+}) {
   return (
-    <li className="mt-4">
-      <h2 className="flex justify-between font-bold">
-        {title} <span>{year}</span>
-      </h2>
-      <div className="flex flex-col border-l-2 -ml-[18px] pl-4 ">
-        <h3>Coordinator</h3>
-        <p>{description}</p>
-      </div>
-    </li>
+    <>
+      <li className="mt-4">
+        <div className="flex justify-between">
+          <div className="flex items-center gap-2 -ml-[27px]">
+            <Circle />
+            <h2 className="font-bold">{title}</h2>
+          </div>
+          <span>{year}</span>
+        </div>
+        <div className="flex flex-col border-l-2 -ml-[18px] pl-4 ">
+          <h3>{position}</h3>
+          <p className="text-justify">{description}</p>
+        </div>
+      </li>
+    </>
   );
 }

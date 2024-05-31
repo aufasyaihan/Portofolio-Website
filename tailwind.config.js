@@ -12,7 +12,10 @@ export default {
         brightGold: "#FFD60A",
       },
       boxShadow: {
-        "custom-brightGold": "0 0 24px rgba(255, 214, 10, 0.5)",
+        "custom-brightGold": "0 0 24px rgba(255, 214, 10, 1)",
+      },
+      dropShadow: {
+        "custom-brightGold": "0 0 24px rgba(255, 214, 10, 1)",
       },
     },
   },

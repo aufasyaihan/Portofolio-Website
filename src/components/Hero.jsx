@@ -1,5 +1,4 @@
 import img from "../assets/images/aufa_removedbg_cropped.png";
-import BlurCircle from "./BlurCircle";
 
 export default function Hero() {
   return (
@@ -31,8 +30,12 @@ export default function Hero() {
           className="object-cover h-full mt-28 scale-125"
         />
       </div>
-      <BlurCircle color="blue" top={56} right={32} padding={32} />
-      <BlurCircle color="gold" bottom={56} right={96} padding={20} />
+      <div
+      className={`absolute top-56 right-32 p-32 blur-3xl rounded-full bg-sky-700 object-cover`}
+    ></div>
+      <div
+      className={`absolute bottom-56 right-96 p-20 blur-3xl rounded-full bg-gold object-cover`}
+    ></div>
     </div>
   );
 }
