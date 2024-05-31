@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <div className="bg-darkBlue h-[550px] rounded-b-[50px] flex justify-between font-poppins px-20 pt-10 overflow-hidden shadow-xl ">
       <div className="text-white my-auto mx-20">
-        <h1 className="text-5xl font-bold">My Name is</h1>
+        <h1 className="text-5xl font-bold"><span className="text-gold">Hi!</span> I&apos;m</h1> 
         <p className="text-gold font-semibold mt-3 text-2xl">
           Aufa Syaihan Azzahidi
         </p>
