@@ -1,6 +1,7 @@
+import About from "./components/About"
 import Hero from "./components/Hero"
-import Info from "./components/Info"
 import Navbar from "./components/Navbar"
+import Section from "./components/Section"
 
 function App() {
 
@@ -8,7 +9,13 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <Info />
+      {/* <Info /> */}
+      <Section id="about">
+        <About />
+      </Section>
+      <Section id="experience">
+        <About />
+      </Section>
     </>
   )
 }
