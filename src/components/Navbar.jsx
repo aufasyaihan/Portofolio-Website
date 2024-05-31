@@ -63,11 +63,6 @@ export default function Navbar() {
             </a>
           </li>
           <li>
-            <a href="#experience" className={`${itemNavStyle} + ${whiteHover}`}>
-              Experience
-            </a>
-          </li>
-          <li>
             <a
               href="#my-projects"
               className={`${itemNavStyle} + ${whiteHover}`}
@@ -76,7 +71,16 @@ export default function Navbar() {
             </a>
           </li>
           <li>
-            <a href="#contact" className={`${itemNavStyle} + ${goldHover} + border border-brightGold text-brightGold`}>
+            <a href="#experience" className={`${itemNavStyle} + ${whiteHover}`}>
+              Experience
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#contact"
+              className={`${itemNavStyle} + ${goldHover} + border border-brightGold text-brightGold`}
+            >
               Contact Me
             </a>
           </li>

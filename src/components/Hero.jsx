@@ -8,14 +8,15 @@ export default function Hero() {
         <h1 className="text-5xl font-bold">
           <span className="text-gold">Hi!</span> I&apos;m
         </h1>
-        <p className="text-gold font-semibold mt-3 text-2xl">
+        <p className="text-gold font-semibold mt-3 text-4xl">
           Aufa Syaihan Azzahidi
         </p>
         <p className="text-xl mt-3">
-          A <span className="text-gold">Web</span> Developer
+          Your favourite <span className="text-gold">Web</span> Developer
         </p>
         <a
-          href="https://docs.google.com/document/d/11kRRi4AK2tDM3U34HB5NcnJLLKfMPY21/edit?usp=sharing&ouid=117240447335121599381&rtpof=true&sd=true" target="_blank"
+          href="https://docs.google.com/document/d/11kRRi4AK2tDM3U34HB5NcnJLLKfMPY21/edit?usp=sharing&ouid=117240447335121599381&rtpof=true&sd=true"
+          target="_blank"
           className="flex gap-1 items-center px-4 py-2 w-fit bg-gold text-darkBlue mt-3 rounded-full hover:shadow-custom-brightGold transition ease-in-out"
         >
           <span>
@@ -24,12 +25,6 @@ export default function Hero() {
           My Resume
         </a>
       </div>
-      {/* <div className="absolute h-60 w-60 bg-white right-[240px] bottom-[220px] rounded-full opacity-35 animate-ping -z-0">
-
-      </div>
-      <div className="my-auto mx-28 border-2 p-2 rounded-full scale-110">
-        <img src={img} alt="profile picture" className="object-cover h-80 w-80 rounded-full"/>
-      </div> */}
       <div className="z-20">
         <img src={img} alt="" className="object-cover h-full mt-28 scale-125" />
       </div>

@@ -2,20 +2,18 @@ import About from "./components/About";
 import Experience from "./components/Experience";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
-import Section from "./components/Section";
 
 function App() {
   return (
     <>
       <Navbar />
       <Hero />
-      {/* <Info /> */}
-      <Section id="about">
+      <section className="pt-[85px]" id="about">
         <About />
-      </Section>
-      <Section id="experience">
+      </section>
+      <section className="pt-[85px]" id="experience">
         <Experience />
-      </Section>
+      </section>
     </>
   );
 }

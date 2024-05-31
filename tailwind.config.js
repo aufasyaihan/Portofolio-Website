@@ -14,9 +14,6 @@ export default {
       boxShadow: {
         "custom-brightGold": "0 0 24px rgba(255, 214, 10, 1)",
       },
-      dropShadow: {
-        "custom-brightGold": "0 0 24px rgba(255, 214, 10, 1)",
-      },
     },
   },
   plugins: [
