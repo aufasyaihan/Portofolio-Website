@@ -40,7 +40,7 @@ export default function Experience() {
         className={`absolute top-28 right-0 p-12 blur-3xl rounded-full bg-gold object-cover`}
       ></div>
       <div
-        className={`absolute bottom-28 left-0 p-8 blur-3xl rounded-full bg-sky-700 object-cover`}
+        className={`absolute bottom-28 left-0 p-10 blur-3xl rounded-full bg-sky-700 object-cover`}
       ></div>
     </div>
   );

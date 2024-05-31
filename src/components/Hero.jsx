@@ -3,7 +3,7 @@ import img from "../assets/images/aufa_removedbg_cropped.png";
 
 export default function Hero() {
   return (
-    <div className="relative bg-darkBlue h-[550px] rounded-b-[50px] flex justify-between font-poppins px-20 pt-10 overflow-hidden shadow-xl ">
+    <div className="relative bg-darkBlue h-[550px] rounded-b-[50px] flex justify-between px-20 pt-10 overflow-hidden shadow-xl ">
       <div className="text-white my-auto mx-20">
         <h1 className="text-5xl font-bold">
           <span className="text-gold">Hi!</span> I&apos;m
