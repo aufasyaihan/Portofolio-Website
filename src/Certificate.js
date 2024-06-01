@@ -2,6 +2,7 @@ import BEM from "./assets/images/certificates/BEM.jpg";
 import HMIF from "./assets/images/certificates/HMIF.jpg";
 import asprakPBO from "./assets/images/certificates/AsprakPBO.jpg";
 import asprakStrukdat from "./assets/images/certificates/AsprakStrukdat.jpg";
+import kp from "./assets/images/certificates/KP.jpg";
 import IC from "./assets/images/certificates/IC.jpg";
 import Lustrum from "./assets/images/certificates/Lustrum.jpg";
 import MM from "./assets/images/certificates/MM.jpg";
@@ -49,6 +50,15 @@ const CERTIFICATE = [
     year: "Aug 2023 - Dec 2023",
     img: asprakPBO,
     link: "https://drive.google.com/file/d/1Bc2T87hCdeQUSuNt3yUhuZBqdlPjHSkS/view?usp=sharing",
+    type: "work",
+  },
+  {
+    id: +new Date() + increment++,
+    name: "Backend Engineer",
+    institution: "Dinas Kearsipan dan Perpustakaan Kabupaten Purbalingga",
+    year: "Jul 2023 - Aug 2023",
+    img: kp,
+    link: "https://drive.google.com/file/d/18uj8J_yRujMzmOtUabbylUsLcV7W2fuC/view?usp=sharing",
     type: "work",
   },
   {
