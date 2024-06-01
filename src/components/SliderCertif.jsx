@@ -1,12 +1,11 @@
 /* eslint-disable react/prop-types */
-import CERTIFICATE from "../Certificate";
 import { Navigation, Pagination, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-export default function SliderCertif() {
+export default function SliderCertif({sertif}) {
   return (
     <Swiper
       breakpoints={{
@@ -31,7 +30,7 @@ export default function SliderCertif() {
       onSlideChange={() => console.log("slide change")}
       onSwiper={(swiper) => console.log(swiper)}
     >
-      {CERTIFICATE.map((certif) => {
+      {sertif.map((certif) => {
         return (
           <SwiperSlide key={certif.id}>
             <a
@@ -48,7 +47,7 @@ export default function SliderCertif() {
               </div>
               <div className="p-4 h-full w-full flex flex-col justify-between">
                 <div>
-                  <h1 className="font-semibold text-xs sm:text-md md:text-lg">
+                  <h1 className="font-bold text-xs sm:text-md md:text-lg">
                     {certif.name}
                   </h1>
                   <p className="text-sky-700 text-xs sm:text-md md:text-lg">

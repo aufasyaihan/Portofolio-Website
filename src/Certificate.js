@@ -90,7 +90,7 @@ const CERTIFICATE = [
   {
     id: +new Date() + increment++,
     name: "Staff of the Documentation Design and Publication Department",
-    institution: "Upgrading",
+    institution: "Upgrading HMIF Unsoed",
     year: "May 2024",
     img: Upgrading,
     link: "https://drive.google.com/file/d/1-bmv1xWCsMoRi98TOU0-BYOIvRzf8Zc2/view?usp=sharing",

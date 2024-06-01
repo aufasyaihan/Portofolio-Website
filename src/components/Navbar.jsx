@@ -72,7 +72,7 @@ export default function Navbar() {
           <span className="text-gold ml-5 hidden sm:block">My</span>
           <span className="underline underline-offset-4 hidden sm:block">Portofolio</span>
         </a>
-        <button className="md:hidden z-50" onClick={handleClick}>
+        <button className="mid:hidden z-50" onClick={handleClick}>
           <img
             src={isOpen ? x : hamburgerMenu}
             alt=""
@@ -80,7 +80,7 @@ export default function Navbar() {
             className="text-white transision-all"
           />
         </button>
-        <ul className="text-white gap-2 p-4 hidden md:flex">
+        <ul className="text-white gap-2 p-4 hidden mid:flex">
           <NavMenu
             itemNavStyle={itemNavStyle}
             whiteHover={whiteHover}

@@ -15,6 +15,9 @@ export default {
       boxShadow: {
         "custom-brightGold": "0 0 24px rgba(255, 214, 10, 1)",
       },
+      screens: {
+        mid: "992.5px",
+      },
     },
   },
   plugins: [
