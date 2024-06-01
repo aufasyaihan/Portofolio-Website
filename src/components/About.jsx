@@ -13,8 +13,8 @@ import php from "../assets/icons/php.svg";
 
 export default function About() {
   return (
-    <div className="flex flex-col gap-5 pt-10 px-10 md:mx-16">
-      <h1 className="font-bold text-4xl text-darkBlue underline underline-offset-8 decoration-sky-500">
+    <div className="flex flex-col gap-5 pt-10 px-10 md:px-24">
+      <h1 className="font-bold text-4xl underline underline-offset-8 decoration-sky-500">
         About Me
       </h1>
       <div className="flex flex-wrap sm:flex-wrap md:flex-nowrap gap-5">
@@ -53,7 +53,7 @@ export default function About() {
           </p>
         </Card>
       </div>
-      <div className="mx-auto">
+      <div className="mx-auto mt-5">
         <h1 className="text-3xl font font-semibold text-center">
           My Skills
         </h1>

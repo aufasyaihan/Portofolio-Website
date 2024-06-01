@@ -6,7 +6,7 @@ import { SocialMedia } from "../Icons/Icons";
 
 export default function Footer() {
   return (
-    <footer className="bg-darkBlue text-white p-10 border-t border-gray-500 h-40">
+    <footer className="bg-darkBlue-900 text-white p-10 border-t border-gray-500 h-40">
       <div className="flex justify-between gap-4 flex-col md:flex-row items-center my-auto md:my-5">
         <div className="flex gap-4 items-center">
           <SocialMedia

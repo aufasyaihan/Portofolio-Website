@@ -34,6 +34,15 @@ export default function NavMenu({
           Experience
         </a>
       </li>
+      <li>
+        <a
+          onClick={onClick}
+          href="#certification"
+          className={`${itemNavStyle} + ${whiteHover}`}
+        >
+          Certification
+        </a>
+      </li>
 
       <li>
         <a

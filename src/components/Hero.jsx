@@ -3,7 +3,7 @@ import img from "../assets/images/aufa_removedbg_cropped.png";
 
 export default function Hero() {
   return (
-    <div className="relative bg-darkBlue gap-2 h-[500px] md:h-[550px] rounded-b-[50px] sm:flex justify-between md:px-20 pt-0 md:pt-10 overflow-hidden shadow-xl md:flex-nowrap">
+    <div className="relative bg-darkBlue-900 gap-2 h-[500px] md:h-[550px] rounded-b-[50px] sm:flex justify-between md:px-20 pt-0 md:pt-10 overflow-hidden shadow-xl md:flex-nowrap">
       <div className="text-white mt-28 ml-10 sm:mt-32 md:mt-auto w-full my-auto sm:ml-20 md:mx-20">
         <h1 className="text-4xl sm:text-5xl font-bold">
           <span className="text-gold">Hi!</span> I&apos;m
@@ -17,7 +17,7 @@ export default function Hero() {
         <a
           href="https://drive.google.com/file/d/1G0qWQ0ESYLUUbWjSNXTnJAM4wT7ahJPG/view?usp=sharing"
           target="_blank"
-          className="flex gap-1 items-center px-4 py-2 w-fit bg-gold text-darkBlue mt-3 rounded-full hover:shadow-custom-brightGold transition ease-in-out"
+          className="flex gap-1 items-center px-4 py-2 w-fit bg-gold text-darkBlue-900 mt-3 rounded-full hover:shadow-custom-brightGold transition ease-in-out"
         >
           <span>
             <DocIcon />

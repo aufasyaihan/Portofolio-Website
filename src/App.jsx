@@ -1,4 +1,5 @@
 import About from "./components/About";
+import Certificate from "./components/Certificates";
 import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
@@ -18,6 +19,9 @@ function App() {
       </section>
       <section className="pt-[85px]" id="experience">
         <Experience />
+      </section>
+      <section className="pt-[85px] -mt-20" id="certification">
+        <Certificate />
       </section>
       <Footer />
     </>

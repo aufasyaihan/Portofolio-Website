@@ -7,7 +7,8 @@ export default {
         poppins: ["Poppins", "sans serif"],
       },
       colors: {
-        darkBlue: "#000814",
+        "darkBlue-900": "#000814",
+        "darkBlue-500": "#02052d",
         gold: "	#eead0e",
         brightGold: "#FFD60A",
       },
