@@ -12,7 +12,7 @@ export default function Hero() {
           Aufa Syaihan Azzahidi
         </p>
         <p className="text-md sm:text-xl mt-3">
-          Your favourite <span className="text-gold">Web</span> Developer
+          Your favorite <span className="text-gold">Web</span> Developer
         </p>
         <a
           href="https://drive.google.com/file/d/1G0qWQ0ESYLUUbWjSNXTnJAM4wT7ahJPG/view?usp=sharing"
