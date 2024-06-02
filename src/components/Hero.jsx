@@ -15,7 +15,7 @@ export default function Hero() {
           Your favorite <span className="text-gold">Web</span> Developer
         </p>
         <a
-          href="https://drive.google.com/file/d/1CxXtGd8IWkgPw6iEceUh24VErBkVEoY9/view?usp=sharing"
+          href="https://drive.google.com/file/d/11Lg_MfNVY6bAy77aVel5BwRvHfPZgKDF/view?usp=sharing"
           target="_blank"
           className="flex gap-1 items-center px-4 py-2 w-fit bg-gold text-darkBlue-900 mt-3 rounded-full hover:shadow-custom-brightGold transition ease-in-out"
         >
