@@ -90,7 +90,7 @@ const CERTIFICATE = [
   },
   {
     id: +new Date() + increment++,
-    name: "Coordinator Consumption Department",
+    name: "Coordinator of Consumption Department",
     institution: "Pengabdian Masyarakat",
     year: "Aug 2023 - Sep 2023",
     img: Pengmas,
