@@ -6,7 +6,7 @@ import x from "../assets/icons/X.svg";
 import logo from "../assets/icons/Logo.svg";
 
 export default function Navbar() {
-  const itemNavStyle = "py-2 px-4 rounded-full transition-all ease-in-out";
+  const itemNavStyle = "py-2 px-4 rounded-full transition-all duration-200 ease-in-out";
   const whiteHover = " hover:bg-white hover:text-darkBlue-900";
   const goldHover =
     " hover:bg-gold hover:text-darkBlue-900 hover:shadow-custom-brightGold";
