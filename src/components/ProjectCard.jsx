@@ -2,7 +2,7 @@
 export default function ProjectCard({ img, title, link, desc }) {
   return (
     <div className="flex flex-col gap-2 group border-2 bg-white rounded-xl shadow-md w-full pb-2 overflow-hidden">
-      <div className="overflow-hidden h-full">
+      <div className="overflow-hidden h-full border-b-2">
         <img
           src={img}
           alt=""
@@ -25,6 +25,7 @@ export default function ProjectCard({ img, title, link, desc }) {
         </h1>
         <a
           href={link}
+          target="_blank"
           className="underline underline-offset-8 decoration-gold decoration-2 hover:text-gold rounded-full px-2 py-1"
         >
           Link to Project ↗
