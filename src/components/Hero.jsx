@@ -17,7 +17,7 @@ export default function Hero() {
         <a
           href="https://drive.google.com/file/d/1B7V6n75nzjaqJEqOQF43VTpefSZxsfKX/view?usp=sharing"
           target="_blank"
-          className="flex gap-1 items-center px-4 py-2 w-fit bg-gold text-darkBlue-900 mt-3 rounded-full hover:shadow-custom-brightGold transition-all duration-200 ease-in-out"
+          className="absolute flex gap-1 items-center px-4 py-2 w-fit bg-gold text-darkBlue-900 mt-3 rounded-full hover:shadow-custom-brightGold transition-all duration-200 ease-in-out z-40"
         >
           <span>
             <DocIcon />
