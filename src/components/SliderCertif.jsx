@@ -34,7 +34,7 @@ export default function SliderCertif({ sertif }) {
             <a
               href={certif.link}
               target="_blank"
-              className="flex flex-col border-2 rounded-lg h-80 sm:h-[450px] bg-white overflow-hidden mb-10 mx-12 shadow-lg"
+              className="flex flex-col border-2 rounded-lg h-96 sm:h-[450px] bg-white overflow-hidden mb-10 mx-12 shadow-lg"
             >
               <div className="sm:h-80 h-full w-full">
                 <img
