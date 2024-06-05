@@ -20,7 +20,7 @@ export const WORK_EXPERIENCES = [
   {
     id: +new Date() + increment++,
     title: "Dinas Kearsipan dan Perpustakaan Kabupaten Purbalingga",
-    position: "Back End Developer",
+    position: "Back End Engineer",
     year: "Jul 2023 - Aug 2023",
     description:
       "Debugged the report module functionality within the Yii2 framework and PHP5 environment, resolving issues that prevented data from displaying on reports. I fixed the SQL query issue causing the problem and conducted thorough testing to verify the solution's effectiveness.",

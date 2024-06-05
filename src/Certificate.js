@@ -54,7 +54,7 @@ const CERTIFICATE = [
   },
   {
     id: +new Date() + increment++,
-    name: "Backend Engineer",
+    name: "Back End Engineer",
     institution: "Dinas Kearsipan dan Perpustakaan Kabupaten Purbalingga",
     year: "Jul 2023 - Aug 2023",
     img: kp,
