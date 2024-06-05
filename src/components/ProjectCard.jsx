@@ -1,12 +1,14 @@
 /* eslint-disable react/prop-types */
 export default function ProjectCard({ img, title, link, desc }) {
   return (
-    <div className="flex flex-col gap-2 border-2 bg-white rounded-xl shadow-md w-full pb-2 overflow-hidden">
-      <img
-        src={img}
-        alt=""
-        className="object-cover h-full border-b-2 border-b-grey-500"
-      />
+    <div className="flex flex-col gap-2 group border-2 bg-white rounded-xl shadow-md w-full pb-2 overflow-hidden">
+      <div className="overflow-hidden h-full">
+        <img
+          src={img}
+          alt=""
+          className="object-cover h-full border-b-2 border-b-grey-500 group-hover:scale-110 transition-all ease-in-out duration-200"
+        />
+      </div>
       <div className="p-4 flex justify-between items-center">
         <h1 className="font-semibold text-xl uppercase text-start flex flex-col">
           {title}{" "}
