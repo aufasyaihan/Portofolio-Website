@@ -66,7 +66,7 @@ export default function Navbar() {
   }
   return (
     <nav className={navStyle}>
-      <div className="mx-8 my-2 flex justify-between items-center">
+      <div className="h-full mx-8 flex justify-between items-center">
         <a href="#" className="text-3xl text-white font-bold sm:p-4 flex items-center">
           <img src={logo} alt="" width={40}/>
           <span className="text-gold ml-5 hidden sm:block">My</span>

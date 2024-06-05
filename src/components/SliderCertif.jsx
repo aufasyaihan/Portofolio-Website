@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-export default function SliderCertif({sertif}) {
+export default function SliderCertif({ sertif }) {
   return (
     <Swiper
       breakpoints={{
@@ -27,8 +27,6 @@ export default function SliderCertif({sertif}) {
       spaceBetween={-46}
       navigation
       pagination={{ clickable: true }}
-      onSlideChange={() => console.log("slide change")}
-      onSwiper={(swiper) => console.log(swiper)}
     >
       {sertif.map((certif) => {
         return (
@@ -54,7 +52,9 @@ export default function SliderCertif({sertif}) {
                     {certif.institution}
                   </p>
                 </div>
-                <p className="text-end text-xs md:text-md text-gray-600">({certif.year})</p>
+                <p className="text-end text-xs md:text-md text-gray-600">
+                  ({certif.year})
+                </p>
               </div>
             </a>
           </SwiperSlide>
