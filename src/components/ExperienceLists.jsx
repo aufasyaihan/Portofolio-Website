@@ -1,4 +1,4 @@
-import { Circle } from "../Icons/Icons";
+import { Circle } from "../UI/Icons";
 
 /* eslint-disable react/prop-types */
 export default function ExperienceLists({

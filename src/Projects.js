@@ -2,6 +2,7 @@ import E_Voting from "./assets/images/E-Voting.png";
 import fishLoc from "./assets/images/FishLoc.png";
 import projectManager from "./assets/images/ProjectManager.png";
 import quizApp from "./assets/images/QuizApp.png";
+import foodOrderApp from "./assets/images/Food Order App.png";
 
 let increment = 0;
 
@@ -33,6 +34,13 @@ const PROJECTS = [
     img: quizApp,
     link: "https://github.com/aufasyaihan/quizz-app",
     desc: ["Vite", "React.js"],
+  },
+  {
+    id: +new Date() + increment++,
+    title: "Food Order App",
+    img: foodOrderApp,
+    link: "https://github.com/aufasyaihan/food-order-app",
+    desc: ["Vite", "React.js", "Node.js"],
   },
 ];
 

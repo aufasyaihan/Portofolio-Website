@@ -2,7 +2,7 @@ import facebook from "../assets/icons/facebook.svg";
 import instagram from "../assets/icons/instagram.svg";
 import linkedin from "../assets/icons/linkedin.svg";
 import github from "../assets/icons/github.svg";
-import { SocialMedia } from "../Icons/Icons";
+import { SocialMedia } from "../UI/Icons";
 
 export default function Footer() {
   return (
