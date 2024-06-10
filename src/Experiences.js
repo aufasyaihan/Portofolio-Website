@@ -3,7 +3,7 @@ let increment = 0;
 export const WORK_EXPERIENCES = [
   {
     id: +new Date() + increment++,
-    title: "Practicum Assistant",
+    title: "Laboratory Assistant",
     position: "Staff of Data Structure Practicum",
     year: "Feb 2023 - Jul 2023",
     description:
@@ -11,7 +11,7 @@ export const WORK_EXPERIENCES = [
   },
   {
     id: +new Date() + increment++,
-    title: "Practicum Assistant",
+    title: "Laboratotry Assistant",
     position: "Coordinator of Object-Oriented Programming Practicum",
     year: "Aug 2023 - Dec 2023",
     description:
