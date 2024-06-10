@@ -37,7 +37,7 @@ const CERTIFICATE = [
   {
     id: +new Date() + increment++,
     name: "Staff of Data Structure Practicum",
-    institution: "Laboratory Assistants Jenderal Soedirman University",
+    institution: "Laboratory Assistants of  Jenderal Soedirman University",
     year: "Feb 2023 - Jul 2023",
     img: asprakStrukdat,
     link: "https://drive.google.com/file/d/1KqjmHUqikULkc1Ez6ucHD8yuMDNE5_M5/view?usp=sharing",
@@ -46,7 +46,7 @@ const CERTIFICATE = [
   {
     id: +new Date() + increment++,
     name: "Coordinator of Object-Oriented Programming Practicum",
-    institution: "Laboratory Assistants Jenderal Soedirman University",
+    institution: "Laboratory Assistants of Jenderal Soedirman University",
     year: "Aug 2023 - Dec 2023",
     img: asprakPBO,
     link: "https://drive.google.com/file/d/1Bc2T87hCdeQUSuNt3yUhuZBqdlPjHSkS/view?usp=sharing",
