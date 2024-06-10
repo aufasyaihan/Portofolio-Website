@@ -20,8 +20,8 @@ export default function About() {
       <div className="flex flex-wrap sm:flex-wrap md:flex-nowrap gap-5">
         <Card img={code} alt="code" width="75px" cardClass={"w-full md:w-1/3"}>
           <p className="pt-4 text-justify">
-            As a Web Developer passionate about full stack development, I am
-            presently engaged in mastering <strong>React.js</strong> and{" "}
+            As a Web Developer passionate in front end development, I am
+            currently engaged in mastering <strong>React.js</strong> and{" "}
             <strong>Next.js</strong>. I am eager to enhance my skills further
             through hands-on practical experiences.
           </p>

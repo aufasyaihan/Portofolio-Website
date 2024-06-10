@@ -4,6 +4,7 @@ export default function NavMenu({
   whiteHover,
   goldHover,
   onClick,
+  isActive,
 }) {
   return (
     <>
@@ -11,7 +12,9 @@ export default function NavMenu({
         <a
           onClick={onClick}
           href="#about"
-          className={`${itemNavStyle} + ${whiteHover}`}
+          className={`${itemNavStyle} + ${whiteHover} ${
+            isActive === "about" ? "bg-white text-darkBlue-900" : ""
+          }`}
         >
           About
         </a>
@@ -20,7 +23,9 @@ export default function NavMenu({
         <a
           onClick={onClick}
           href="#projects"
-          className={`${itemNavStyle} + ${whiteHover}`}
+          className={`${itemNavStyle} + ${whiteHover} ${
+            isActive === "projects" ? "bg-white text-darkBlue-900" : ""
+          }`}
         >
           My Projects
         </a>
@@ -28,8 +33,10 @@ export default function NavMenu({
       <li>
         <a
           onClick={onClick}
-          href="#experience"
-          className={`${itemNavStyle} + ${whiteHover}`}
+          href="#experiences"
+          className={`${itemNavStyle} + ${whiteHover} ${
+            isActive === "experiences" ? "bg-white text-darkBlue-900" : ""
+          }`}
         >
           Experience
         </a>
@@ -37,8 +44,10 @@ export default function NavMenu({
       <li>
         <a
           onClick={onClick}
-          href="#certification"
-          className={`${itemNavStyle} + ${whiteHover}`}
+          href="#certifications"
+          className={`${itemNavStyle} + ${whiteHover} ${
+            isActive === "certifications" ? "bg-white text-darkBlue-900" : ""
+          }`}
         >
           Certification
         </a>

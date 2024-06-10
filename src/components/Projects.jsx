@@ -9,7 +9,7 @@ export default function Projects() {
         <h1 className="font-bold text-4xl text-darkBlue-900 underline underline-offset-8 decoration-sky-500">
           Projects
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-3 grid-flow-row gap-5 mt-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-flow-row gap-5 mt-5">
           {PROJECTS.map((project) => (
             <ProjectCard
               key={project.id}

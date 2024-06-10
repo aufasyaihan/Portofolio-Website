@@ -6,7 +6,8 @@ import x from "../assets/icons/X.svg";
 import logo from "../assets/icons/Logo.svg";
 
 export default function Navbar() {
-  const itemNavStyle = "py-2 px-4 rounded-full transition-all duration-200 ease-in-out";
+  const itemNavStyle =
+    "py-2 px-4 rounded-full transition-all duration-200 ease-in-out";
   const whiteHover = " hover:bg-white hover:text-darkBlue-900";
   const goldHover =
     " hover:bg-gold hover:text-darkBlue-900 hover:shadow-custom-brightGold";
@@ -14,25 +15,43 @@ export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState({
     isScrolled: false,
     isOverHero: false,
+    currSection: "",
   });
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     function handleScroll() {
-      if (window.scrollY > 20 && window.scrollY < 500) {
+      if (window.scrollY > 20 && window.scrollY < 450) {
         setIsScrolled((prevState) => ({
           ...prevState,
           isScrolled: true,
           isOverHero: false,
         }));
-        // console.log("scrolled");
-      } else if (window.scrollY >= 500) {
+      } else if (window.scrollY >= 450 && window.scrollY < 1050) {
         setIsScrolled((prevState) => ({
           ...prevState,
           isScrolled: false,
           isOverHero: true,
+          currSection: "about",
         }));
-        // console.log("over hero section");
+      } else if (window.scrollY >= 1050 && window.scrollY < 1800) {
+        setIsScrolled((prevState) => ({
+          ...prevState,
+          isOverHero: true,
+          currSection: "projects",
+        }));
+      } else if (window.scrollY >= 1800 && window.scrollY < 2900) {
+        setIsScrolled((prevState) => ({
+          ...prevState,
+          isOverHero: true,
+          currSection: "experiences",
+        }));
+      } else if (window.scrollY >= 2900) {
+        setIsScrolled((prevState) => ({
+          ...prevState,
+          isOverHero: true,
+          currSection: "certifications",
+        }));
       } else {
         setIsScrolled({
           isScrolled: false,
@@ -67,10 +86,15 @@ export default function Navbar() {
   return (
     <nav className={navStyle}>
       <div className="h-full mx-8 flex justify-between items-center">
-        <a href="#" className="text-3xl text-white font-bold sm:p-4 flex items-center">
-          <img src={logo} alt="" width={40}/>
+        <a
+          href="#"
+          className="text-3xl text-white font-bold sm:p-4 flex items-center"
+        >
+          <img src={logo} alt="" width={40} />
           <span className="text-gold ml-5 hidden sm:block">My</span>
-          <span className="underline underline-offset-4 hidden sm:block">Portofolio</span>
+          <span className="underline underline-offset-4 hidden sm:block">
+            Portofolio
+          </span>
         </a>
         <button className="mid:hidden z-50" onClick={handleClick}>
           <img
@@ -85,6 +109,7 @@ export default function Navbar() {
             itemNavStyle={itemNavStyle}
             whiteHover={whiteHover}
             goldHover={goldHover}
+            isActive={isScrolled.currSection}
           />
         </ul>
       </div>

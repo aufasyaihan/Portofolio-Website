@@ -2,11 +2,11 @@
 export default function ProjectCard({ img, title, link, desc }) {
   return (
     <div className="flex flex-col gap-2 group border-2 bg-white rounded-xl shadow-md w-full pb-2 overflow-hidden">
-      <div className="overflow-hidden h-full border-b-2">
+      <div className="overflow-hidden h-52 border-b-2">
         <img
           src={img}
           alt=""
-          className="object-cover h-full border-b-2 border-b-grey-500 group-hover:scale-110 transition-all ease-in-out duration-200"
+          className="object-cover w-full h-full border-b-2 border-b-grey-500 group-hover:scale-110 transition-all ease-in-out duration-200"
         />
       </div>
       <div className="p-4 flex justify-between items-center">

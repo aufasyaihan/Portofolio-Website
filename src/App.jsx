@@ -17,10 +17,10 @@ function App() {
       <section className="pt-[85px] -mt-20" id="projects">
         <Projects />
       </section>
-      <section className="pt-[85px]" id="experience">
+      <section className="pt-[85px]" id="experiences">
         <Experience />
       </section>
-      <section className="pt-[85px] -mt-20" id="certification">
+      <section className="pt-[85px] -mt-20" id="certifications">
         <Certificate />
       </section>
       <Footer />
