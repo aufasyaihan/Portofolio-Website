@@ -26,6 +26,7 @@ export default function Navbar() {
           ...prevState,
           isScrolled: true,
           isOverHero: false,
+          currSection: "",
         }));
       } else if (window.scrollY >= 450 && window.scrollY < 1050) {
         setIsScrolled((prevState) => ({
@@ -56,6 +57,7 @@ export default function Navbar() {
         setIsScrolled({
           isScrolled: false,
           isOverHero: false,
+          currSection: "",
         });
       }
     }
