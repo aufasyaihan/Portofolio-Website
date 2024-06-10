@@ -22,7 +22,7 @@ export default function Certificate() {
   return (
     <div className="py-10 sm:px-10 md:px-24 bg-white">
       <h1 className="font-bold text-4xl underline underline-offset-8 decoration-sky-500 px-10">
-        Certification
+        Certifications
       </h1>
       <div className="relative my-5">
         <div className="grid grid-cols-2 sm:grid-cols-4 md:flex text-xs md:text-md gap-2 px-12 py-4">
