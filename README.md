@@ -21,4 +21,4 @@ npm run dev
 ```
 
 ## Or visit my site directly
-<a style="padding: 5px; color:" href="https://aufa-azzahidi.vercel.app" target="_blank">Click Me!</a>
+<a href="https://aufa-azzahidi.vercel.app" target="_blank">Click Me!</a>
