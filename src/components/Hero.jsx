@@ -17,7 +17,7 @@ export default function Hero() {
         <a
           href="https://drive.google.com/file/d/12M0juIDXaqBiuEiTi3dWd9qazksQFmSe/view?usp=sharing"
           target="_blank"
-          className="absolute flex gap-1 items-center px-4 py-2 w-fit bg-gold text-darkBlue-900 mt-3 rounded-full hover:shadow-custom-brightGold transition-all duration-200 ease-in-out z-40"
+          className="absolute flex gap-1 items-center px-4 py-2 w-fit bg-gold text-darkBlue-900 mt-3 rounded-full hover:shadow-custom-brightGold transition-all duration-200 ease-in-out z-50"
         >
           <span>
             <DocIcon />
@@ -25,15 +25,15 @@ export default function Hero() {
           My Resume
         </a>
       </div>
-      <div className="z-20 sm:w-[700px] md:w-full">
+      <div className="z-20 sm:w-[700px] md:w-full flex">
         <img
           src={img}
           alt=""
-          className="object-cover absolute top-48 left-20 z-10 sm:relative sm:top-0 sm:left-0 sm:z-0 sm:block h-full sm:mt-28 scale-75 sm:scale-100 md:scale-125"
+          className="object-cover absolute top-48 left-20 z-40 sm:relative sm:top-0 sm:left-0 sm:block h-full sm:mt-28 scale-75 sm:scale-100 md:scale-125"
         />
+        <div className="relative h-4 p-20 blur-3xl w-4 rounded-full bg-sky-700 object-cover md:p-32 animate-pulse -right-96 -top-48 sm:top-52 sm:right-48 md:right-64 md:top-52"></div>
+        <div className="relative p-12 blur-3xl w-4 rounded-full z-0 bg-gold h-4 md:p-20 animate-pulse object-cover top-48 right-48 sm:top-36 sm:right-[450px] md:right-[700px] md:top-32"></div>
       </div>
-      <div className="absolute p-20 right-0 blur-3xl rounded-full bg-sky-700 object-cover md:top-56 md:right-32 md:p-32 animate-pulse"></div>
-      <div className="absolute p-12 bottom-0 blur-3xl rounded-full bg-gold object-cover md:bottom-56 md:right-96 md:p-20 animate-pulse"></div>
     </div>
   );
 }
