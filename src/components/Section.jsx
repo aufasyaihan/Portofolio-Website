@@ -8,7 +8,7 @@ const variants = {
   visible: { opacity: 1, y: 0 },
 };
 
-export function Section({ id, children }) {
+export function Section({ id, className, children }) {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -21,7 +21,7 @@ export function Section({ id, children }) {
       animate={inView ? "visible" : "hidden"}
       variants={variants}
       transition={{ duration: 1 }}
-      className="pt-[85px] -mt-10"
+      className={`pt-[85px] ${className}`}
       id={id}
     >
       {children}
