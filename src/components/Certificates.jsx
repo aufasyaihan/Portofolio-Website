@@ -1,5 +1,5 @@
 import SliderCertif from "./SliderCertif";
-import CERTIFICATE from "../Certificate";
+import CERTIFICATE from "../lib/Certificate";
 import Button from "../UI/Button";
 import { useState } from "react";
 

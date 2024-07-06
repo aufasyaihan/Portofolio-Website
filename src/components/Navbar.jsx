@@ -64,7 +64,7 @@ export default function Navbar() {
       }
     }
 
-    scrollY.onChange(handleScroll);
+    scrollY.on("change", handleScroll);
 
     return () => {
       scrollY.clearListeners();

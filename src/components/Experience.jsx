@@ -1,4 +1,4 @@
-import { WORK_EXPERIENCES, ORGANIZATIONS_EXPERIENCES } from "../Experiences";
+import { WORK_EXPERIENCES, ORGANIZATIONS_EXPERIENCES } from "../lib/Experiences";
 import ExperienceLists from "./ExperienceLists";
 
 export default function Experience() {

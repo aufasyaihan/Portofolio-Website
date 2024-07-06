@@ -1,8 +1,8 @@
-import E_Voting from "./assets/images/E-Voting.png";
-import fishLoc from "./assets/images/FishLoc.png";
-import projectManager from "./assets/images/ProjectManager.png";
-import quizApp from "./assets/images/QuizApp.png";
-import foodOrderApp from "./assets/images/Food Order App.png";
+import E_Voting from "../assets/images/E-Voting.png";
+import fishLoc from "../assets/images/FishLoc.png";
+import projectManager from "../assets/images/ProjectManager.png";
+import quizApp from "../assets/images/QuizApp.png";
+import foodOrderApp from "../assets/images/Food Order App.png";
 
 let increment = 0;
 

@@ -30,7 +30,7 @@ export default function About() {
           img={gradCap}
           alt="graduation-cap"
           width="75px"
-          cardClass={"w-full md:w-1/3"}
+          cardClass="w-full md:w-1/3"
         >
           <p className="pt-4 text-justify">
             I am an active undergraduate student in{" "}
@@ -43,7 +43,7 @@ export default function About() {
           img={group}
           alt="group"
           width="75px"
-          cardClass={"w-full md:w-1/3"}
+          cardClass="w-full md:w-1/3"
         >
           <p className="pt-4 text-justify">
             My strong <strong>teamwork</strong> and <strong>leadership</strong>{" "}
@@ -61,7 +61,7 @@ export default function About() {
           <Card
             img={reactLogo}
             alt="react-logo"
-            width="75px"
+            width="100px"
             cardClass="w-full h-full hover:shadow-sky-200 hover:shadow-xl transition ease-in-out"
             className="my-auto"
           />

@@ -1,4 +1,4 @@
-import PROJECTS from "../Projects";
+import PROJECTS from "../lib/Projects";
 import ProjectCard from "./ProjectCard";
 import RightArrowIcon from "../UI/RightArrowIcon";
 

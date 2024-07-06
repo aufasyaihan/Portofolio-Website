@@ -1,17 +1,19 @@
-import BEM from "./assets/images/certificates/BEM.jpg";
-import HMIF from "./assets/images/certificates/HMIF.jpg";
-import asprakPBO from "./assets/images/certificates/AsprakPBO.jpg";
-import asprakStrukdat from "./assets/images/certificates/AsprakStrukdat.jpg";
-import kp from "./assets/images/certificates/KP.jpg";
-import IC from "./assets/images/certificates/IC.jpg";
-import Lustrum from "./assets/images/certificates/Lustrum.jpg";
-import MM from "./assets/images/certificates/MM.jpg";
-import Pengmas from "./assets/images/certificates/Pengmas.png";
-import Upgrading from "./assets/images/certificates/Upgrading.jpg";
-import dicoding1 from "./assets/images/certificates/Belajar Membuat Front-End Web untuk Pemula.jpg";
-import dicoding2 from "./assets/images/certificates/Pemrograman Web Pemula.jpg";
-import dicoding3 from "./assets/images/certificates/Javascript Dasar.jpg";
-import RevoU from "./assets/images/certificates/RevoU.jpg";
+import BEM from "../assets/images/certificates/BEM.jpg";
+import HMIF from "../assets/images/certificates/HMIF.jpg";
+import asprakPBO from "../assets/images/certificates/AsprakPBO.jpg";
+import asprakStrukdat from "../assets/images/certificates/AsprakStrukdat.jpg";
+import kp from "../assets/images/certificates/KP.jpg";
+import IC from "../assets/images/certificates/IC.jpg";
+import Lustrum from "../assets/images/certificates/Lustrum.jpg";
+import MM from "../assets/images/certificates/MM.jpg";
+import Pengmas from "../assets/images/certificates/Pengmas.png";
+import Upgrading from "../assets/images/certificates/Upgrading.jpg";
+import dicoding1 from "../assets/images/certificates/Belajar Membuat Front-End Web untuk Pemula.jpg";
+import dicoding2 from "../assets/images/certificates/Pemrograman Web Pemula.jpg";
+import dicoding3 from "../assets/images/certificates/Javascript Dasar.jpg";
+import RevoU from "../assets/images/certificates/RevoU.jpg";
+
+
 
 let increment = 0;
 
