@@ -10,15 +10,13 @@ import Loading from "./UI/Loading";
 import { Section } from "./components/Section";
 
 // List of images to preload
-const imagesToPreload = [
-  import("./assets/images/aufa_removedbg_cropped.png"),
-];
+const imagesToPreload = [import("./assets/images/aufa_removedbg_cropped.png")];
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const preloadImages = async (images) => {
+    async function preloadImages(images) {
       const promises = images.map((image) => {
         return new Promise((resolve, reject) => {
           const img = new Image();
@@ -35,7 +33,7 @@ function App() {
         console.error("Failed to preload images:", error);
         setIsLoading(false);
       }
-    };
+    }
 
     const loadTime = setTimeout(() => {
       preloadImages(imagesToPreload);
