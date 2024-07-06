@@ -9,7 +9,7 @@ import php from "../assets/icons/php.svg";
 
 const SKILLS = [
   {
-    id: 1,
+    id: Math.random() * 1000 * 1,
     img: reactLogo,
     alt: "react-logo",
     width: "100px",
@@ -18,7 +18,7 @@ const SKILLS = [
     className: "my-auto",
   },
   {
-    id: 2,
+    id: Math.random() * 1000 * 2,
     img: laravel,
     alt: "laravel-logo",
     width: "150px",
@@ -27,7 +27,7 @@ const SKILLS = [
     className: "my-auto",
   },
   {
-    id: 3,
+    id: Math.random() * 1000 * 3,
     img: javaScript,
     alt: "javascript-logo",
     width: "125px",
@@ -36,7 +36,7 @@ const SKILLS = [
     className: "my-auto rounded-md",
   },
   {
-    id: 4,
+    id: Math.random() * 1000 * 4,
     img: html,
     alt: "html-logo",
     width: "125px",
@@ -45,7 +45,7 @@ const SKILLS = [
     className: "my-auto rounded-md",
   },
   {
-    id: 5,
+    id: Math.random() * 1000 * 5,
     img: css,
     alt: "css-logo",
     width: "125px",
@@ -54,7 +54,7 @@ const SKILLS = [
     className: "my-auto rounded-md",
   },
   {
-    id: 6,
+    id: Math.random() * 1000 * 6,
     img: tailwind,
     alt: "tailwind-logo",
     width: "125px",
@@ -63,7 +63,7 @@ const SKILLS = [
     className: "my-auto rounded-md",
   },
   {
-    id: 7,
+    id: Math.random() * 1000 * 7,
     img: figma,
     alt: "figma-logo",
     width: "125px",
@@ -72,7 +72,7 @@ const SKILLS = [
     className: "my-auto rounded-md",
   },
   {
-    id: 8,
+    id: Math.random() * 1000 * 8,
     img: php,
     alt: "php-logo",
     width: "125px",
