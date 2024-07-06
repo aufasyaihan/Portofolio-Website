@@ -2,14 +2,7 @@ import Card from "./Card";
 import code from "../assets/icons/code.svg";
 import gradCap from "../assets/icons/graduation-cap.svg";
 import group from "../assets/icons/group.svg";
-import laravel from "../assets/icons/Laravel.svg";
-import reactLogo from "../assets/icons/React.svg";
-import javaScript from "../assets/icons/javascript.svg";
-import html from "../assets/icons/html.svg";
-import css from "../assets/icons/css.svg";
-import tailwind from "../assets/icons/tailwind-css.svg";
-import figma from "../assets/icons/figma.svg";
-import php from "../assets/icons/php.svg";
+import SKILLS from "../lib/Skills";
 
 export default function About() {
   return (
@@ -39,12 +32,7 @@ export default function About() {
             my teamwork and leadership skills.
           </p>
         </Card>
-        <Card
-          img={group}
-          alt="group"
-          width="75px"
-          cardClass="w-full md:w-1/3"
-        >
+        <Card img={group} alt="group" width="75px" cardClass="w-full md:w-1/3">
           <p className="pt-4 text-justify">
             My strong <strong>teamwork</strong> and <strong>leadership</strong>{" "}
             abilities are shown by my experiences in previous organizations. In
@@ -54,66 +42,18 @@ export default function About() {
         </Card>
       </div>
       <div className="mx-auto mt-5">
-        <h1 className="text-3xl font font-semibold text-center">
-          My Skills
-        </h1>
+        <h1 className="text-3xl font font-semibold text-center">My Skills</h1>
         <div className="grid grid-cols-2 -mt-10 md:mt-0 md:grid-cols-4 lg:grid-cols-8 gap-3 justify-center items-center scale-75">
-          <Card
-            img={reactLogo}
-            alt="react-logo"
-            width="100px"
-            cardClass="w-full h-full hover:shadow-sky-200 hover:shadow-xl transition ease-in-out"
-            className="my-auto"
-          />
-          <Card
-            img={laravel}
-            alt="react-logo"
-            width="150px"
-            cardClass="w-full h-full hover:shadow-red-200 hover:shadow-xl transition ease-in-out"
-            className="my-auto"
-          />
-          <Card
-            img={javaScript}
-            alt="react-logo"
-            width="125px"
-            cardClass="w-full h-full hover:shadow-amber-200 hover:shadow-xl transition ease-in-out"
-            className="my-auto rounded-md"
-          />
-          <Card
-            img={html}
-            alt="react-logo"
-            width="125px"
-            cardClass="w-full h-full hover:shadow-red-200 hover:shadow-xl transition ease-in-out"
-            className="my-auto rounded-md"
-          />
-          <Card
-            img={css}
-            alt="react-logo"
-            width="125px"
-            cardClass="w-full h-full hover:shadow-sky-200 hover:shadow-xl transition ease-in-out"
-            className="my-auto rounded-md"
-          />
-          <Card
-            img={tailwind}
-            alt="react-logo"
-            width="125px"
-            cardClass="w-full h-full hover:shadow-sky-200 hover:shadow-xl transition ease-in-out"
-            className="my-auto rounded-md"
-          />
-          <Card
-            img={figma}
-            alt="react-logo"
-            width="125px"
-            cardClass="w-full h-full hover:shadow-violet-200 hover:shadow-xl transition ease-in-out"
-            className="my-auto rounded-md"
-          />
-          <Card
-            img={php}
-            alt="react-logo"
-            width="125px"
-            cardClass="w-full h-full hover:shadow-slate-200 hover:shadow-xl transition ease-in-out"
-            className="my-auto rounded-md"
-          />
+          {SKILLS.map((skill) => (
+            <Card
+              key={skill.id}
+              img={skill.img}
+              alt={skill.alt}
+              width={skill.width}
+              cardClass={skill.cardClass}
+              className={skill.className}
+            />
+          ))}
         </div>
       </div>
     </div>
