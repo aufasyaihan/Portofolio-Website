@@ -9,11 +9,41 @@ import Projects from "./components/Projects";
 import Loading from "./UI/Loading";
 import { Section } from "./components/Section";
 
+// List of images to preload
+const imagesToPreload = [
+  import("./assets/images/aufa_removedbg_cropped.png"),
+];
+
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setIsLoading(false), 2000);
+    const preloadImages = async (images) => {
+      const promises = images.map((image) => {
+        return new Promise((resolve, reject) => {
+          const img = new Image();
+          img.src = image;
+          img.onload = resolve;
+          img.onerror = reject;
+        });
+      });
+
+      try {
+        await Promise.all(promises);
+        setIsLoading(false);
+      } catch (error) {
+        console.error("Failed to preload images:", error);
+        setIsLoading(false);
+      }
+    };
+
+    const loadTime = setTimeout(() => {
+      preloadImages(imagesToPreload);
+    }, 2000);
+
+    return () => {
+      clearTimeout(loadTime);
+    };
   }, []);
 
   return (
@@ -24,16 +54,16 @@ function App() {
         <>
           <Navbar />
           <Hero />
-          <Section id="about" className="-mt-20">
+          <Section id="about">
             <About />
           </Section>
-          <Section id="projects" className="-mt-32 md:-mt-20">
+          <Section id="projects">
             <Projects />
           </Section>
           <Section id="experiences">
             <Experience />
           </Section>
-          <Section id="certifications" className="-mt-20">
+          <Section id="certifications">
             <Certificate />
           </Section>
           <Footer />
