@@ -13,7 +13,6 @@ export default function Navbar() {
   const goldHover =
     " hover:bg-gold hover:text-darkBlue-900 hover:shadow-custom-brightGold";
   const [isScrolled, setIsScrolled] = useState({
-    isScrolled: false,
     isOverHero: false,
     currSection: "",
   });
@@ -26,14 +25,12 @@ export default function Navbar() {
       if (scrollY.get() > 20 && scrollY.get() < 450) {
         setIsScrolled((prevState) => ({
           ...prevState,
-          isScrolled: true,
-          isOverHero: false,
+          isOverHero: true,
           currSection: "",
         }));
       } else if (scrollY.get() >= 450 && scrollY.get() < 1050) {
         setIsScrolled((prevState) => ({
           ...prevState,
-          isScrolled: false,
           isOverHero: true,
           currSection: "about",
         }));
@@ -57,7 +54,6 @@ export default function Navbar() {
         }));
       } else {
         setIsScrolled({
-          isScrolled: false,
           isOverHero: false,
           currSection: "",
         });
@@ -81,11 +77,8 @@ export default function Navbar() {
 
   let navStyle =
     "fixed top-0 w-screen font-poppins z-50 transition ease-in-out h-[85px]";
-  if (isScrolled.isScrolled) {
-    navStyle += " backdrop-blur-md";
-  }
   if (isScrolled.isOverHero) {
-    navStyle += " bg-darkBlue-900";
+    navStyle += " bg-darkBlue-900 shadow-md";
   }
   return (
     <motion.nav className={navStyle}>
