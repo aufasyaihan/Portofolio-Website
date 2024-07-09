@@ -25,16 +25,16 @@ function App() {
         <>
           <Navbar />
           <Hero />
-          <Section id="about">
+          <Section id="about" className="-mt-20">
             <About />
           </Section>
-          <Section id="projects">
+          <Section id="projects" className="-mt-40 sm:-mt-20">
             <Projects />
           </Section>
-          <Section id="experiences">
+          <Section id="experiences" className="-mt-10">
             <Experience />
           </Section>
-          <Section id="certifications">
+          <Section id="certifications" className="-mt-20">
             <Certificate />
           </Section>
           <Footer />
