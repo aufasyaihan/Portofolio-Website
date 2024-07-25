@@ -14,7 +14,7 @@ function App() {
   const preLoader = document.getElementById("preloader");
 
   setTimeout(() => {
-    preLoader.style.display = "none";
+    preLoader.remove();
     setIsLoading(false);
   }, 1500);
 
