@@ -4,7 +4,7 @@ import ExperienceLists from "./ExperienceLists";
 export default function Experience() {
   return (
     <>
-      <div className="relative bg-darkBlue-900 px-10 md:px-24 py-10 rounded-xl shadow-lg text-white flex flex-col gap-5 overflow-hidden">
+      <div className="relative bg-darkBlue-900 px-10 md:px-24 py-10 text-white flex flex-col gap-5 overflow-hidden">
         <h1 className="font-bold text-4xl text-gold underline underline-offset-8 decoration-gold">
           Experiences
         </h1>
