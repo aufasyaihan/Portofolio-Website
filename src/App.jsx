@@ -41,9 +41,7 @@ function App() {
               <Certificate />
             </Section>
           </main>
-          <footer>
-            <Footer />
-          </footer>
+          <Footer />
         </>
       )}
     </>
