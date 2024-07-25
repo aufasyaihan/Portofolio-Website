@@ -23,21 +23,27 @@ function App() {
       <SpeedInsights />
       {!isLoading && (
         <>
-          <Navbar />
-          <Hero />
-          <Section id="about" className="-mt-20">
-            <About />
-          </Section>
-          <Section id="projects" className="-mt-40 sm:-mt-20">
-            <Projects />
-          </Section>
-          <Section id="experiences" className="-mt-10">
-            <Experience />
-          </Section>
-          <Section id="certifications" className="-mt-20">
-            <Certificate />
-          </Section>
-          <Footer />
+          <header>
+            <Navbar />
+            <Hero />
+          </header>
+          <main>
+            <Section id="about" className="-mt-20">
+              <About />
+            </Section>
+            <Section id="projects" className="-mt-40 sm:-mt-20">
+              <Projects />
+            </Section>
+            <Section id="experiences" className="-mt-10">
+              <Experience />
+            </Section>
+            <Section id="certifications" className="-mt-20">
+              <Certificate />
+            </Section>
+          </main>
+          <footer>
+            <Footer />
+          </footer>
         </>
       )}
     </>
