@@ -6,17 +6,17 @@
 
 ## Installation
 ### Clone the code
-```
+```bash
 git init
 git clone https://github.com/aufasyaihan/Portofolio-Website.git
 ```
 ### Install modules
-```
+```bash
 npm install
 ```
 
 ## Run the program
-```
+```bash
 npm run dev
 ```
 
