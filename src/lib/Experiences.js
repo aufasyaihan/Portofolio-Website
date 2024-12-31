@@ -3,6 +3,14 @@ let increment = 0;
 export const WORK_EXPERIENCES = [
   {
     id: +new Date() + increment++,
+    title: "PT. Telkom Indonesia (Persero) Tbk.",
+    position: "Software Quality Assurance",
+    year: "Aug 2024 - Jan 2025",
+    description:
+      "I led over 10 daily standups to monitor squad progress, developed automated API testing using Mocha.js to streamline the testing of 5+ APIs and improve efficiency from 97.5% to 99.58%, and designed and executed 50+ comprehensive test cases across 2 squads to ensure robust software quality and reliability.",
+  },
+  {
+    id: +new Date() + increment++,
     title: "Laboratory Assistant",
     position: "Staff of Data Structure Practicum",
     year: "Feb 2023 - Jul 2023",
