@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import About from "./components/About";
 import Certificate from "./components/Certificates";
 import Experience from "./components/Experience";
@@ -8,44 +8,50 @@ import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import { Section } from "./components/Section";
 import { SpeedInsights } from "@vercel/speed-insights/react";
+import Achievement from "./components/Acheivement";
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
-  const preLoader = document.getElementById("preloader");
+    const [isLoading, setIsLoading] = useState(true);
+    const preLoader = document.getElementById("preloader");
 
-  setTimeout(() => {
-    preLoader.remove();
-    setIsLoading(false);
-  }, 1500);
+    useEffect(() => {
+        setTimeout(() => {
+            preLoader?.remove();
+            setIsLoading(false);
+        }, 1500);
+    }, [preLoader]);
 
-  return (
-    <>
-      <SpeedInsights />
-      {!isLoading && (
+    return (
         <>
-          <header>
-            <Navbar />
-            <Hero />
-          </header>
-          <main>
-            <Section id="about" className="-mt-20">
-              <About />
-            </Section>
-            <Section id="projects" className="-mt-40 sm:-mt-20">
-              <Projects />
-            </Section>
-            <Section id="experiences" className="-mt-10">
-              <Experience />
-            </Section>
-            <Section id="certifications" className="-mt-20">
-              <Certificate />
-            </Section>
-          </main>
-          <Footer />
+            <SpeedInsights />
+            {!isLoading && (
+                <>
+                    <header>
+                        <Navbar />
+                        <Hero />
+                    </header>
+                    <main>
+                        <Section id="about" className="-mt-20">
+                            <About />
+                        </Section>
+                        <Section id="projects" className="-mt-40 sm:-mt-20">
+                            <Projects />
+                        </Section>
+                        <Section id="experiences" className="-mt-10">
+                            <Experience />
+                        </Section>
+                        <Section id="achievements" className="-mt-10">
+                            <Achievement />
+                        </Section>
+                        <Section id="certifications" className="-mt-20">
+                            <Certificate />
+                        </Section>
+                    </main>
+                    <Footer />
+                </>
+            )}
         </>
-      )}
-    </>
-  );
+    );
 }
 
 export default App;

@@ -40,11 +40,17 @@ export default function Navbar() {
           isOverHero: true,
           currSection: "projects",
         }));
-      } else if (scrollY.get() >= 1800 && scrollY.get() < 2900) {
+      } else if (scrollY.get() >= 1800 && scrollY.get() < 2400) {
         setIsScrolled((prevState) => ({
           ...prevState,
           isOverHero: true,
           currSection: "experiences",
+        }));
+      } else if (scrollY.get() >= 2400 && scrollY.get() < 2900) {
+        setIsScrolled((prevState) => ({
+          ...prevState,
+          isOverHero: true,
+          currSection: "achievements",
         }));
       } else if (scrollY.get() >= 2900) {
         setIsScrolled((prevState) => ({

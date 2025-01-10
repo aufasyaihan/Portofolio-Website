@@ -16,7 +16,7 @@ export default function Experience() {
                 key={exp.id}
                 title={exp.title}
                 year={exp.year}
-                description={exp.description}
+                // description={exp.description}
                 position={exp.position}
               />
             ))}
@@ -31,7 +31,7 @@ export default function Experience() {
                   key={exp.id}
                   title={exp.title}
                   year={exp.year}
-                  description={exp.description}
+                  // description={exp.description}
                   position={exp.position}
                 />
               );

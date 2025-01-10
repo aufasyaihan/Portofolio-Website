@@ -4,7 +4,7 @@ import { Circle } from "../UI/Icons";
 export default function ExperienceLists({
   title,
   year,
-  description,
+  // description,
   position,
 }) {
   return (
@@ -19,7 +19,7 @@ export default function ExperienceLists({
         </div>
         <div className="flex flex-col border-l-2 -ml-[18px] pl-4 ">
           <h3>{position}</h3>
-          <p className="text-justify text-md mt-2 text-gray-400">{description}</p>
+          {/* <p className="text-justify text-md mt-2 text-gray-400">{description}</p> */}
         </div>
       </li>
     </>
