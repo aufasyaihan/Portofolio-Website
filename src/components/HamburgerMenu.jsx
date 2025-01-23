@@ -6,7 +6,7 @@ export default function HamburgerMenu({ children, isOpen }) {
     <motion.div
       initial={{ height: 0, opacity: 0 }}
       animate={{
-        height: isOpen ? "45vh" : 0,
+        height: isOpen ? "55vh" : 0,
         opacity: isOpen ? 1 : 0,
       }}
       exit={{ height: 0, opacity: 0 }}
